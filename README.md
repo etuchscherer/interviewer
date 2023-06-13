@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Yet another weather service app.
 
-This is a [Next.js](https://nextjs.org/) application, that uses react, and axios to fetch local weather information from [Open Meteo](https://open-meteo.com/).
+This is a [Next.js](https://nextjs.org/) application, that uses react, and axios to fetch local weather information from [Open Meteo](https://open-meteo.com/). We also use [Typescript](https://www.typescriptlang.org/), and [Tailwindcss](https://tailwindcss.com/docs/installation).
 
 * [System Requirements](#system-requirements)
 * [Getting Started](#getting-started)
@@ -26,7 +26,7 @@ npm i
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[Open in your browser](http://localhost:3000).
 
 ## How It Works
 
