@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 100svw;
+  min-height: 100svh;
+}

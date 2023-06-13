@@ -1,0 +1,25 @@
+.city-results-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.city {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.city:hover {
+  border-color: #888;
+  background-color: #f5f5f5;
+}
+
+.city:hover span {
+  color: #888;
+}
+
+.city span {
+  display: inline-block;
+}

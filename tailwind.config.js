@@ -7,10 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primary: '#1E40AF', // Primary color for headers, buttons, etc.
+        secondary: '#EF4444', // Secondary color for alerts, errors, etc.
+        accent: '#10B981', // Accent color for highlights, icons, etc.
+      },
+      fontFamily: {
+        heading: ['Roboto', 'sans-serif'], // Font family for headings
+        body: ['Inter', 'sans-serif'], // Font family for body text
+      },
+      fontSize: {
+        '2xl': '1.5rem', // Custom font size for larger headings
+      },
+      spacing: {
+        '72': '18rem', // Custom spacing value for specific layout needs
       },
     },
   },
