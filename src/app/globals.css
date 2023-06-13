@@ -32,3 +32,19 @@ body {
   min-width: 100svw;
   min-height: 100svh;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/sailboat.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: blur(2px);
+  /* Adjust the blur value as needed */
+  z-index: -1;
+}

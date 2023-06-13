@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import './globals.css'
 import { Roboto } from 'next/font/google'
-import BlurredBackground from '@/components/BlurredBackground/component'
 
 const roboto = Roboto({ weight: '400', subsets: ['latin'] })
 
@@ -15,6 +14,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  const backgroundImage = 'https://cdn.discordapp.com/attachments/1054074145224265741/1118249932038606918/eric-t_a_picture_of_a_sailboat_in_french_polynesia_taken_on_a_c_41b29b0d-b1df-4f43-a1e1-195984dca365.png'
+
   return (
     <html lang="en">
       <body className={`${roboto.className} container`}>
@@ -22,8 +24,7 @@ export default function RootLayout({
           <h1 className="text-2xl md:text-5xl font-heading font-bold">Y.A.W.S.A.</h1>
           <p className='text-gray-300'>Yet another weather service app</p>
         </header>
-        <main className='flex-grow self-center md:pt-8'>
-          <BlurredBackground imageUrl="https://cdn.discordapp.com/attachments/1054074145224265741/1118249932038606918/eric-t_a_picture_of_a_sailboat_in_french_polynesia_taken_on_a_c_41b29b0d-b1df-4f43-a1e1-195984dca365.png" />
+        <main className='flex-grow self-center md:pt-8 background'>
           {children}
         </main>
         <footer className="bg-gray-200 text-center py-4 w-full">

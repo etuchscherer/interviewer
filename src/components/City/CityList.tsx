@@ -10,7 +10,7 @@ interface CityListProps {
 function CityResult({ city }: { city: GeoResult }) {
 
   const cityName = city.name.replace(/\s/g, '-').toLowerCase();
-  const adminName = (city.admin1 || city.country).replace(/\s/g, '-').toLowerCase();
+  const adminName = (city.admin1 || city.country || '').replace(/\s/g, '-').toLowerCase();
 
   return (
     <Link href={`/city/${cityName}/${adminName}?lat=${city.latitude}&lon=${city.longitude}&co=${city.country}`} className="city mt-4">
